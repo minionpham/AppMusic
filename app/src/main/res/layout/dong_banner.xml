@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imageviewbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+       />
+    <RelativeLayout
+        android:id="@+id/relativelayoutbanner"
+        android:layout_alignBottom="@+id/imageviewbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imagebaihat"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"/>
+        <TextView
+            android:id="@+id/tvtitlebaihat"
+            android:layout_toRightOf="@+id/imagebaihat"
+            android:layout_alignTop="@+id/imagebaihat"
+            android:layout_marginTop="5dp"
+            android:text="Lỡ yêu em"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/gioithieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imagebaihat"
+            android:layout_below="@+id/tvtitlebaihat"
+            android:text="Bài hát mới mong mng ủng ho"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="40dp"
+            android:maxLines="2"
+            android:textSize="13sp"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

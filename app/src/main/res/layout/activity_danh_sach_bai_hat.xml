@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CoordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DanhSachBaiHatActivity">
+  <RelativeLayout
+      android:id="@+id/rltdsbaihat"
+      android:layout_width="match_parent"
+      android:layout_height="300dp">
+    <ImageView
+      android:id="@+id/imgbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <ImageView
+        android:id="@+id/imgdsbaihat"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+      android:layout_centerVertical="true"
+      android:layout_centerHorizontal="true"
+      android:elevation="7dp"
+        android:scaleType="fitXY"/>
+  </RelativeLayout>
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+      android:id="@+id/floatingactionbutton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:layout_below="@+id/rltdsbaihat"
+      android:layout_centerHorizontal="true"
+      android:src="@drawable/baseline_music_note_24"/>
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycleviewdsbaihat"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:layout_below="@+id/rltdsbaihat"
+    android:layout_marginTop="30dp"/>
+    
+
+
+</RelativeLayout>
